@@ -1,10 +1,12 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-
+/*
 * {
 	border: 1px dashed red;
 	min-height: 10px;
 } 
+*/
+
 body{
     background: rgb(74, 156, 7);
 }
@@ -15,7 +17,7 @@ body{
     position: absolute;
 }
 
-.pinta-up {
+.pinta-up, .pinta-down {
     font-size: 4rem;
 }
 
@@ -24,6 +26,23 @@ body{
 }
 
 .pinta-down {
-    font-size: 4rem;
     transform: rotate(180deg)
+}
+
+.spade {
+    content: ♠;
+}
+
+.heart {
+    content: ♥;
+    color: red;
+}
+
+.club {
+    content: ♣;
+}
+
+.diamond {
+    content: ♦ ;
+    color: red;
 }
