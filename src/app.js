@@ -41,6 +41,26 @@ function temporizadorNuevaCarta(intervalo) {
   }, 1000);
 }
 
+function ajustarTamañoCarta() {
+  const inputAncho = document.getElementById("ancho-carta");
+  const inputAlto = document.getElementById("alto-carta");
+  const carta = document.querySelector(".card");
+
+    inputAncho.addEventListener("input", () => {
+    const ancho = parseInt(inputAncho.value, 10);
+    if (!isNaN(ancho) && ancho > 0) {
+      carta.style.width = `${ancho}px`;
+    }
+  });
+
+  inputAlto.addEventListener("input", () => {
+    const alto = parseInt(inputAlto.value, 10);
+    if (!isNaN(alto) && alto > 0) {
+      carta.style.height = `${alto}px`;
+    }
+  });
+}
+
 window.onload = function() {
   
   actualizarCarta();
@@ -49,4 +69,6 @@ window.onload = function() {
   botonNuevaCarta.addEventListener("click", actualizarCarta);
 
   temporizadorNuevaCarta(10000); // tiempo en milisegundos
+
+  ajustarTamañoCarta();
 };

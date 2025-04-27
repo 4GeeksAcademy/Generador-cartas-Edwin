@@ -52,3 +52,11 @@ body{
     content: "♦" ;
     color: red;
 }
+
+#ancho-carta {
+    width: 50px;
+}
+
+#alto-carta {
+    width: 50px;
+}
