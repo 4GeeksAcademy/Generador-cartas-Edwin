@@ -1,11 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
+    <title>Generador de cartas</title>
     <!-- Fontawesome is our recomended library for icons -->
     <link
       rel="stylesheet"
@@ -14,18 +13,21 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="card border rounded-3 p-3 top-50 start-50 translate-middle">
+      <!-- Pinta arriba a la izquierda -->
+      <div class="pinta-up position-absolute top-0 start-0 m-2">♥</div>
+
+      <!-- Número centrado -->
+      <div class="card-value d-flex justify-content-center align-items-center h-100">
+        <span>A</span>
+      </div>
+
+      <!-- Pinta abajo a la derecha -->
+      <div class="pinta-down position-absolute bottom-0 end-0 m-2">
+        ♥
       </div>
     </div>
 
