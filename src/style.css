@@ -29,20 +29,20 @@ body{
     transform: rotate(180deg)
 }
 
-.spade {
-    content: ♠;
+.spade::before {
+    content: "♠";
 }
 
-.heart {
-    content: ♥;
+.heart::before {
+    content: "♥";
     color: red;
 }
 
-.club {
-    content: ♣;
+.club::before {
+    content: "♣";
 }
 
-.diamond {
-    content: ♦ ;
+.diamond::before {
+    content: "♦" ;
     color: red;
 }
