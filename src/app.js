@@ -63,7 +63,7 @@ function ajustarTamañoCarta() {
   // Límites para el ancho y alto
   const minAncho = 100;
   const maxAncho = 1000;
-  const minAlto = 150;
+  const minAlto = 120;
   const maxAlto = 700;
 
   inputAncho.addEventListener("input", () => {

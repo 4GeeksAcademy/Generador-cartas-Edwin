@@ -1,11 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-/*
+
 * {
-	border: 1px dashed red;
+	/*border: 1px dashed red;*/
 	min-height: 10px;
 } 
-*/
+
 
 body{
     background: rgb(74, 156, 7);
