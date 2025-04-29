@@ -61,7 +61,7 @@ function ajustarTamañoCarta() {
   const carta = document.querySelector(".card");
 
   // Límites para el ancho y alto
-  const minAncho = 100;
+  const minAncho = 200;
   const maxAncho = 1000;
   const minAlto = 120;
   const maxAlto = 700;

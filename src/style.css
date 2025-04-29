@@ -20,7 +20,7 @@ body{
     width: 300px;
     height: 440px;
     background-color: antiquewhite;
-    border-radius: 2%;
+    border-radius: 15px;
 }
 
 .pinta-up, .pinta-down {
