@@ -42,7 +42,7 @@ function actualizarCarta() {
 
 function temporizadorNuevaCarta(intervalo) {
   let tiempoRestante = intervalo / 1000;
-  const contador = document.getElementById("contador-tiempo");
+  let contador = document.getElementById("contador-tiempo");
 
   setInterval(() => {
     tiempoRestante--;
@@ -56,18 +56,18 @@ function temporizadorNuevaCarta(intervalo) {
 }
 
 function ajustarTamañoCarta() {
-  const inputAncho = document.getElementById("ancho-carta");
-  const inputAlto = document.getElementById("alto-carta");
-  const carta = document.querySelector(".card");
+  let inputAncho = document.getElementById("ancho-carta");
+  let inputAlto = document.getElementById("alto-carta");
+  let carta = document.querySelector(".card");
 
   // Límites para el ancho y alto
-  const minAncho = 200;
-  const maxAncho = 1000;
-  const minAlto = 120;
-  const maxAlto = 700;
+  let minAncho = 200;
+  let maxAncho = 1000;
+  let minAlto = 120;
+  let maxAlto = 700;
 
   inputAncho.addEventListener("input", () => {
-    const ancho = parseInt(inputAncho.value, 10);
+    let ancho = parseInt(inputAncho.value, 10);
 
     if (isNaN(ancho) || ancho < minAncho) {
       ancho = minAncho;
@@ -80,7 +80,7 @@ function ajustarTamañoCarta() {
   });
 
   inputAlto.addEventListener("input", () => {
-    const alto = parseInt(inputAlto.value, 10);
+    let alto = parseInt(inputAlto.value, 10);
 
     if (isNaN(alto) || alto < minAlto) {
       alto = minAlto;
